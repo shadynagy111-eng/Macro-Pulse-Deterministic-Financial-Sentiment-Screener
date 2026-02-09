@@ -1,0 +1,18 @@
+# --- Security ---
+.env                    # NEVER commit your API keys
+secrets.json
+
+# --- Python & OS Junk ---
+__pycache__/
+*.pyc
+venv/                   # Your local virtual environment
+.DS_Store               # Mac system file
+
+# --- Large AI Models ---
+*.bin                   # Don't upload 10GB model weights
+*.safetensors           # Hugging Face model weights
+models/                 # Local model directory
+
+# --- IDE Settings ---
+.vscode/
+.idea/
