@@ -1,0 +1,11 @@
+TASK: Analyze the following text regarding: {query}
+
+CONTEXT DATA:
+{search_results}
+
+OUTPUT FORMAT:
+{
+  "sentiment": "Hawkish/Dovish/Neutral",
+  "score": 1-10,
+  "reasoning": "..."
+}
