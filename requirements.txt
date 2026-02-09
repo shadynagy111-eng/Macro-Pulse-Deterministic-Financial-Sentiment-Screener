@@ -1,0 +1,18 @@
+# --- Core System & CLI ---
+python-dotenv>=1.0.0      # Loading API keys from .env
+rich>=13.7.0              # Beautiful terminal formatting (colors, tables)
+tqdm>=4.66.0              # Progress bars
+
+# --- Web Search & Data Processing ---
+tavily-python>=0.3.0      # The search API wrapper
+requests>=2.31.0          # HTTP requests
+beautifulsoup4>=4.12.0    # Cleaning HTML tags from search results
+pandas>=2.1.0             # Structuring data for reports
+
+# --- LLM Engine (Hugging Face) ---
+torch>=2.2.0              # PyTorch (Check your CUDA version!)
+transformers>=4.38.0      # Model loading
+accelerate>=0.27.0        # Hardware optimization
+bitsandbytes>=0.42.0      # 4-bit quantization (Crucial for running local LLMs)
+peft>=0.8.0               # Loading Fine-Tuned LoRA adapters
+sentencepiece>=0.2.0      # Tokenizer requirement for some models (e.g. Llama)
